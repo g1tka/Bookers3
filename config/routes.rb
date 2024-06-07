@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   
   root to: 'homes#top'
   
-  # get 'homes/top'
-  # get 'homes/about'
+  get 'homes/about', as: 'about'
+  
+  get 'relationships/followings'
+  get 'relationships/followers'
   
   
   devise_for :users

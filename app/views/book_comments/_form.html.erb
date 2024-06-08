@@ -1,0 +1,6 @@
+<%= form_with model: [book, BookComment.new], local: false do |f| %>
+  <%= f.text_area :comment, rows: '5', class: 'w-100', id: "comment_textarea" %><br>
+  <%= f.submit "送信" %><br>
+<% end %>
+
+<!--model book_comment, カラム名 cimmentなので自動的に id=book_comment_comment付与されることも-->
